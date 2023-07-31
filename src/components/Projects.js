@@ -1,4 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
+import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg1 from "../assets/img/project-img1.png";
+import projImg2 from "../assets/img/project-img2.png";
+import projImg3 from "../assets/img/project-img3.png";
 
 export const Projects = () => {
 
@@ -31,7 +36,7 @@ export const Projects = () => {
                             until I put in text which is not a placeholder.
                         </p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                            <Nav variant="pills" defaultActiveKey="/home">
+                            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
                                     <Nav.Link eventKey="first">Tab One</Nav.Link>
                                 </Nav.Item>
@@ -48,7 +53,10 @@ export const Projects = () => {
                                         {
                                             projects.map((project, index) => {
                                                 return (
-                                                    <p>{project.title}</p>
+                                                    <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                    />
                                                 )
                                             })
                                         }
@@ -65,6 +73,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
+            <img className="background-image-right" src={colorSharp2}></img>
         </section>
     );
 }
