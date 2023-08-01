@@ -177,7 +177,7 @@ span.navbar-text {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.social-icon a::before {
+.social-icon a:not(.gitlab-icon)::before {
   content: "";
   width: 42px;
   height: 42px;
@@ -198,7 +198,7 @@ span.navbar-text {
 	transition: 0.3s ease-in-out;
 }
 
-.social-icon a:hover img {
+.social-icon a:hover:not(.gitlab-icon) img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
@@ -679,4 +679,102 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+/************ Gitlab CSS ************/
+
+.tanuki-logo .tanuki {
+  fill: #F5F5F5;
+  transition: all 0.8s
+}
+
+.tanuki-logo .tanuki:hover {
+  fill: #AA83FF;
+  transition: all 0.1s
+}
+
+.tanuki-logo .left-cheek, .tanuki-logo .right-cheek {
+  fill: #F0F0F0;
+  transition: all 0.8s
+}
+
+.tanuki-logo .left-cheek:hover, .tanuki-logo .right-cheek:hover {
+  fill: #B897FF;
+  transition: all 0.1s
+}
+
+.tanuki-logo .chin {
+  fill: #ECECEC;
+  transition: all 0.8s
+}
+
+.tanuki-logo .chin:hover {
+  fill: #C4AAFF;
+  transition: all 0.1s
+}
+
+.tanuki-logo.animate .tanuki-shape {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite
+}
+
+.tanuki-logo.animate .tanuki {
+  animation-name: animate-tanuki-base
+}
+
+@keyframes animate-tanuki-base {
+  0%, 50% {
+      fill: #F5F5F5
+  }
+
+  25% {
+      fill: #AA83FF
+  }
+}
+
+.tanuki-logo.animate .right-cheek {
+  animation-name: animate-tanuki-right-cheek
+}
+
+@keyframes animate-tanuki-right-cheek {
+  25%, 75% {
+      fill: #F0F0F0
+  }
+
+  50% {
+      fill: #B897FF
+  }
+}
+
+.tanuki-logo.animate .chin {
+  animation-name: animate-tanuki-chin
+}
+
+@keyframes animate-tanuki-chin {
+  50%, 100% {
+      fill: #ECECEC
+  }
+
+  75% {
+      fill: #C4AAFF
+  }
+}
+
+.tanuki-logo.animate .left-cheek {
+  animation-name: animate-tanuki-left-cheek
+}
+
+@keyframes animate-tanuki-left-cheek {
+  25%, 75% {
+      fill: #F0F0F0
+  }
+
+  100% {
+      fill: #B897FF
+  }
+}
+
+.social-icon a.gitlab-icon {
+  position: relative;
+  top: -4px;
 }
