@@ -16,7 +16,7 @@ const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: "spicefe@gmail.com",
-    pass: process.env.REACT_APP_GOOGLE_PASSWORD,
+    pass: "",
   },
 });
 
