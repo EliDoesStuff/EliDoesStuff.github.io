@@ -1,9 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/project-img1.jpg";
+import projImg2 from "../assets/img/project-img2.jpg";
+import projImg3 from "../assets/img/project-img3.jpg";
 
 export const Projects = () => {
 
@@ -12,16 +12,19 @@ export const Projects = () => {
             title: "Find & Seek",
             description: "Adventure-Seeking Social Media App",
             imgUrl: projImg1,
+            link: "https://gitlab.com/team-safari/FindAndSeek",
         },
         {
             title: "Astro",
             description: "Repair & Service Spacecraft Vehicles",
             imgUrl: projImg2,
+            link: "https://gitlab.com/barrettAJ/astro",
         },
         {
             title: "Character Chronicles",
             description: "Create & Organize Wiki-Like Pages For Your Roleplay Characters",
             imgUrl: projImg3,
+            link: "https://gitlab.com/spicefe/roleplay-character-organizer",
         },
     ];
 
@@ -32,8 +35,8 @@ export const Projects = () => {
                     <Col>
                         <h2>Projects</h2>
                         <p>
-                            This is placeholder text. This text is meant to be a placeholder
-                            until I put in text which is not a placeholder.
+                            These are all of the projects I have worked on and am currently working on.<br></br>
+                            Click on the project to be taken to the repository and explore them yourself!
                         </p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
@@ -63,10 +66,10 @@ export const Projects = () => {
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                    Placeholder Text.
+                                    No projects here.
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                    Placeholder Text.
+                                    No projects here.
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>

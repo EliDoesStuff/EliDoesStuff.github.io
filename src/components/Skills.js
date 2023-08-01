@@ -1,10 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg"
-import meter2 from "../assets/img/meter2.svg"
-import meter3 from "../assets/img/meter3.svg"
 import colorSharp from "../assets/img/color-sharp.png";
+import caro1 from "../assets/img/caro1.png";
+import caro2 from "../assets/img/caro2.png";
+import caro3 from "../assets/img/caro3.png";
+import caro4 from "../assets/img/caro4.png";
+import caro5 from "../assets/img/caro5.png";
+import caro6 from "../assets/img/caro6.png";
+import caro7 from "../assets/img/caro7.png";
+import caro8 from "../assets/img/caro8.png";
+import caro9 from "../assets/img/caro9.png";
+import caro10 from "../assets/img/caro10.png";
 
 export const Skills = () => {
     const responsive = {
@@ -36,21 +43,48 @@ export const Skills = () => {
                                 Skills
                             </h2>
                             <p>
-                                This is placeholder text. This text is meant to be a placeholder
-                                until I put in text which is not a placeholder.
+                                These are the frameworks and coding languages I have experience in.
                             </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
+                                    <img src={caro1} alt="Image" />
                                     <h5>Python</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
+                                    <img src={caro2} alt="Image" />
                                     <h5>Javascript</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
-                                    <h5>HTML/CSS</h5>
+                                    <img src={caro3} alt="Image" />
+                                    <h5>HTML</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={caro4} alt="Image" />
+                                    <h5>CSS</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={caro5} alt="Image" />
+                                    <h5>React</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={caro6} alt="Image" />
+                                    <h5>Django</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={caro7} alt="Image" />
+                                    <h5>SQL</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={caro8} alt="Image" />
+                                    <h5>FastAPI</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={caro9} alt="Image" />
+                                    <h5>Git</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={caro10} alt="Image" />
+                                    <h5>Docker</h5>
                                 </div>
                             </Carousel>
                         </div>

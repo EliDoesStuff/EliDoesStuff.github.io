@@ -49,10 +49,11 @@ export const Banner = () => {
                         <span className="tagline">Welcome to my Portfolio!</span>
                         <h1>{"Hello, I'm Eli! "}<span className="wrap">{text}</span></h1>
                         <p>
-                            This is placeholder text. This text is meant to be a placeholder
-                            until I put in text which is not a placeholder.
+                            Welcome to my portfolio! Take a look around and please feel free to contact me if you have any questions!
                         </p>
-                        <button onClick={() => console.log("connect")}>Let's connect <ArrowRightCircle size={25} /></button>
+                        <button onClick={() => document.getElementById('connect').scrollIntoView({ behavior: 'smooth' })}>
+                            Let's connect <ArrowRightCircle size={25} />
+                        </button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />

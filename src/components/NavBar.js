@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav} from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/logo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon2 from "../assets/img/nav-icon2.png";
+import navIcon3 from "../assets/img/nav-icon3.png";
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -41,14 +41,17 @@ export const NavBar = () => {
                         <Nav.Link href="#home" className={activeLink === "home" ? "active navbar-link": "navbar-link"} onClick={() => onUpdateActiveLink("home")}>Home</Nav.Link>
                         <Nav.Link href="#skills" className={activeLink === "skills" ? "active navbar-link": "navbar-link"} onClick={() => onUpdateActiveLink("skills")}>Skills</Nav.Link>
                         <Nav.Link href="#projects" className={activeLink === "projects" ? "active navbar-link": "navbar-link"} onClick={() => onUpdateActiveLink("projects")}>Projects</Nav.Link>
+                        <Nav.Link href="https://docs.google.com/document/d/14KMo59L4iFOxWDZGO_OXFS_GrGYfNImRrttVvsHGFko/edit?usp=sharing" className={activeLink === "resume" ? "active navbar-link": "navbar-link"}>Resume</Nav.Link>
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="#"><img src={navIcon1} alt="" /></a>
-                            <a href="#"><img src={navIcon2} alt="" /></a>
-                            <a href="#"><img src={navIcon3} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/elispicer/"><img src={navIcon1} alt="" /></a>
+                            <a href="https://github.com/EliDoesStuff"><img src={navIcon2} alt="" /></a>
+                            <a href="https://gitlab.com/spicefe"><img src={navIcon3} alt="" /></a>
                         </div>
-                        <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+                        <button className="vvd" onClick={() => document.getElementById('connect').scrollIntoView({ behavior: 'smooth' })}>
+                            <span>Let's connect</span>
+                        </button>
                     </span>
                 </Navbar.Collapse>
             </Container>
