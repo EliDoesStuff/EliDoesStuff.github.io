@@ -111,9 +111,9 @@ export const Contact = () => {
                                 </Col>
                                 {status.message && (
                                     <Col className="contact-status" sm={12}>
-                                    <p className={status.success === false ? "danger" : "success"}>
-                                        {status.message}
-                                    </p>
+                                        <p className={status.success === false ? "danger" : "success"}>
+                                            {status.message}
+                                        </p>
                                     </Col>
                                 )}
                             </Row>
