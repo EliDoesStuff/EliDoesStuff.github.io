@@ -4,13 +4,13 @@ import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 import caro1 from "../assets/img/caro1.png";
 import caro2 from "../assets/img/caro2.png";
-import caro3 from "../assets/img/caro3.png";
-import caro4 from "../assets/img/caro4.png";
+import caro3 from "../assets/img/caro3.svg";
+import caro4 from "../assets/img/caro4.svg";
 import caro5 from "../assets/img/caro5.png";
-import caro6 from "../assets/img/caro6.png";
+import caro6 from "../assets/img/caro6.svg";
 import caro7 from "../assets/img/caro7.png";
-import caro8 from "../assets/img/caro8.png";
-import caro9 from "../assets/img/caro9.png";
+import caro8 from "../assets/img/caro8.svg";
+import caro9 from "../assets/img/caro9.svg";
 import caro10 from "../assets/img/caro10.png";
 
 export const Skills = () => {
